@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kvestate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cousine:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/index.css">
+   <!-- ./assets/styles/index.css    for nodejs-->
+    <!-- ./styles/index.css  for vs code-->
+
+</head>
+<body class="page__body">
+    <header class="header"> 
+        <div class="header__logo logo">
+            <img class="logo__img" src="./images/logo.png" alt="k and v estate">
+            <p class="logo__title">k&v estate</p>
+            <p class="logo__tegline">Агенство недвижимости</p>
+        </div>
+        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__contacts">
+                
+            <svg class="menu__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" >
+                <use class="menu__icon-contact" href="./images/sprite.svg#contact"></use>
+                <use class="menu__icon-cross" href="./images/sprite.svg#cross"></use>
+            </svg>
+            
+        </button>
+        <ul class="menu__contacts" id="menu__contacts">
+                
+            <li class="contacts__phone">
+                <a href="tel:+380507596025" class="menu__link menu__link--current contact__link">+380507596025</a>
+            </li>
+            <li class="contacts__social">
+                <ul class="contacts__social-list">
+                    <li class="contacts__item">
+                        <a href="tg://resolve?domain=@ekolis" class="menu__link contact__link"><img class="contacts__img" src="./images/social/telegram_icon.png" alt="Telegram" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/facebook_icon.png" alt="Facebook" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/youtube_icon.png" alt="Youtube" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/messenger_icon.png" alt="Messenger" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/viber_icon.png" alt="Viber" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/email_icon.png" alt="Email" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/twitter_icon.png" alt="Twitter" class="contacts__img"></a>
+                    </li> 
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link contacts__link--inactivate"><img class="contacts__img" src="./images/social/skype_icon.png" alt="Skype" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/instagram_icon.png" alt="Instagram" class="contacts__img"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <nav class="header__menu menu">
+
+            <ul class="menu__list" id="menu__list">
+                
+                <li class="menu__items"><a href="" class="menu__link">Продать</a> </li>
+                <li class="menu__items"><a href="" class="menu__link">Оценка</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Консультация</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Как мы работаем</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Готовые кейсы</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Отзывы</a></li>
+                <li class="menu__items"><a href="" class="menu__link">Контакты</a></li>
+            
+            </ul>
+
+        </nav> 
+        
+    </header>
+    
+    <main>
+        <div class="content__slider">
+            <div class="slides">
+                <img class="slider__content--image" src="./images/slider/arenda kvartir.jpg" alt="">
+            </div>
+        </div>
+        <!--<h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Deserunt tempore perferendis eaque veniam quaerat laborum 
+            animi dolor similique repudiandae? Quasi placeat fuga quos illo ipsa quod officia ad nesciunt unde!</h1>
+        -->
+    </main>
+    
+    <footer>
+
+    </footer>
+
+    <script>
+        (() => {
+            const menuButton = document.querySelector('.menu__button');
+            const menuContacts = document.querySelector('.menu__contacts');
+            const menuNav = document.querySelector('.header__menu');
+
+            menuButton.addEventListener('click', () => {
+                let expanded = menuButton.getAttribute('aria-expanded') === 'true' || false;
+                menuButton.setAttribute('aria-expanded', !expanded);
+                menuButton.classList.toggle('menu__button--open');
+                menuContacts.classList.toggle('menu__contacts--open');
+                menuNav.classList.toggle('header__menu--open');
+            }); 
+        })();
+    </script>
+
+</body>
+</html>

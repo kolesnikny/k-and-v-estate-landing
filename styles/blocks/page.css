@@ -1,0 +1,82 @@
+/* 
+CSS Mini Reset
+http://www.vcarrer.com/2010/05/css-mini-reset.html
+*/
+
+/*
+    max-width: 749px; mobile
+    max-width: 1023px; tabloid
+    min 1024px; desctop 
+*/
+
+html, body, div, form, fieldset, legend, label
+{
+ margin: 0;
+ padding: 0; 
+}
+table
+{
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+ 
+th, td
+{
+ text-align: left;
+ vertical-align: top;
+}
+ 
+h1, h2, h3, h4, h5, h6, th, td, caption { 
+    font-weight:normal; 
+}
+ 
+img { 
+    border: 0; 
+}
+
+/* Page */
+
+.page{
+    line-height: 1.5;
+    font-family: 'Rubik', sans-serif;
+}
+
+.page__body{
+
+}
+
+@media (min-width: 100px) and (max-width: 319px){
+    .page__body{
+        /*idth: 100vw;*/
+        margin: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 749px){
+    .page__body{
+        /*width: 100vw;*/
+        margin: auto;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 1200px){
+    .page__body{
+        /*width: 100vw;*/
+        margin: auto;
+    }
+}
+/*
+@media (min-width: 901px) and (max-width: 1200px){
+    .page__body{
+        width: 90vw;
+        margin: auto;
+    }
+}
+*/
+
+@media (min-width: 1201px){
+    .page__body{
+        /*width: 100vw;*/
+        margin: auto;
+    }
+}
