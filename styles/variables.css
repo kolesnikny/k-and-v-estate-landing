@@ -1,24 +1,25 @@
 /* Variables */
 
 :root {
+
+    /*Colors*/
     --basic-black: #000000;
-    --basic-dark: #273238;
-    --basic-semi-light: #696969;
-    --basic-neutral: #b1b3b6;
-    --basic-light: #e9eaeb;
+    /*--basic-neutral: #b1b3b6;*/
     --basic-white: #ffffff;
-
-    --special-extra-dark: #386d9b;
-    --speccial-dark: #3b84bb;
-    --spacial-dark-50a: rgba(76, 76, 76, 0.5);
-    --special-semi-dark:#42a0da;
-    --special-neutral: #61afb4;
-    --special-semi-light: #81c36d;
-    --speciall-light: #afe63a;
-    --special-extra-light:#c6f523;
-
-
-
-    --width-medium: 600px;
+    --special-extra-dark: #1c33be;
+    --special-white-a: rgba(255, 255, 255, 0.9);
     
+    /*Fonts*/
+
+    --basic-font: 16px;
+
+    /*Logo Sizes*/
+    --max-logo: 150px;
+   
 }
+
+/*
+    @media (max-width: 369px){}
+    @media (min-width: 370px) and (max-width: 999px){}
+    @media (min-width: 1000px){}
+*/
