@@ -9,6 +9,11 @@ html, body, div, form, fieldset, legend, label
  font-family: 'Rubik', sans-serif;
  font-size: var(--basic-font);
 }
+
+a{
+    text-decoration: none;
+}
+
 table
 {
  border-collapse: collapse;

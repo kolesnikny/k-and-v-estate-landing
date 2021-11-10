@@ -1,11 +1,4 @@
 /* Menu */
-
-@media (min-width: 370px) and (max-width: 999px){
-    .menu {
-        display: grid;
-    }
-}
-
 /* Button */
 
 .menu__button{
@@ -20,8 +13,6 @@
         background-color: transparent;
         justify-self: end;
         align-self: center;
-        position: -webkit-sticky;
-        position: sticky;
     }
 }
 
@@ -48,6 +39,7 @@
 .header__menu{
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 @media (max-width: 369px){
@@ -71,6 +63,10 @@
 
 @media (min-width: 1000px){
     .header__menu {   
+        height: var(--max-logo);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: calc(var(--max-logo) + 50px);
         
     }
 }
@@ -83,71 +79,61 @@
 
 @media (min-width: 370px) and (max-width: 999px){
     .menu__list {
-        padding-top: 25px;   
         display: grid;
         grid-template-columns: 1fr;
-        justify-items: stretch;
-        align-items: stretch;
-        align-content: space-between;
     }
 }
 
 @media (min-width: 1000px){
     .menu__list {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: calc(var(--max-logo) + 100px);
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 30px;
+        align-items: center;
+        
     }
 }
 
-/* Menu punkts */
+/* Menu items */
 
-.menu__items{
+.menu__item{
     text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0;
+}
+.menu__item a{
+    color: var(--special-extra-dark);
+    font-weight: 600;
+    
 }
 
 @media (min-width: 370px) and (max-width: 999px){
-    .menu__items {   
-        color: var(--special-extra-dark);
-        letter-spacing: 0.01em;
-        font-size: 2em;
+    .menu__item {   
         display: grid;
         grid-template-columns: 1fr;
         justify-items: stretch;
         margin-top: 10px;
         margin-bottom: 10px;
     }
-}
 
-@media (min-width: 1000px){
-    .menu__items {
-        font-size: 2em;
-    }
-}
-
-/* Links */
-
-.menu__link{
-    text-decoration: none;
-    font-family: 'Rubik', sans-serif;
-    letter-spacing: 0.01em;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
-
-
-@media (min-width: 370px) and (max-width: 999px){
-    .menu__link {   
-        font-weight: 600;
+    .menu__item a{
         color: var(--special-extra-dark);
-        
+        font-weight: 600;
     }
 }
 
 @media (min-width: 1000px){
-    .menu__link {
-        font-weight: 400;
+    .menu__item {
+        font-size: 1.6em;
+    }
+
+    .menu__item a{
         color: var(--basic-white);
+        font-weight: 600;
     }
 }

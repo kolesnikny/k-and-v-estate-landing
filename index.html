@@ -14,39 +14,43 @@
     <!-- header.css -->
     <header class="header"> 
         <!-- logo.css -->
-        <div class="header__logo">
-            <img class="logo__img" src="./images/logo.png" alt="k and v estate">
-            <p class="logo__title">k&v estate</p>
-            <p class="logo__tegline">Агенство недвижимости</p>
+        <div class="header__conteiner">
+            <div class="header__logo">
+                <img class="logo__img" src="./images/logo.png" alt="k and v estate">
+                <p class="logo__title">k&v estate</p>
+                <p class="logo__tegline">Агенство недвижимости</p>
+            </div>
+
+            <!-- menu.css -->
+
+            <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
+
+                <svg class="menu__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" >
+                    <use class="menu__icon-contact" href="./images/sprite.svg#contact"></use>
+                    <use class="menu__icon-cross" href="./images/sprite.svg#cross"></use>
+                </svg>
+
+            </button>
+        
+            <nav class="header__menu">
+
+                <ul class="menu__list" id="menu__list">
+
+                    <li class="menu__item"><a href="">Продажа</a> </li>
+                    <li class="menu__item"><a href="">Оценка</a></li>
+                    <li class="menu__item"><a href="">Консультация</a></li>
+                    <li class="menu__item"><a href="">Как мы работаем</a></li>
+                </ul>
+
+                <ul class="menu__list" id="menu__list">
+                    <li class="menu__item"><a href="">Наши кейсы</a></li>
+                    <li class="menu__item"><a href="">Отзывы</a></li>
+                    <li class="menu__item"><a href="">Контакты</a></li>
+                
+                </ul>
+
+            </nav> 
         </div>
-
-        <!-- menu.css -->
-        
-        <button class="menu__button" type="button" aria-expanded="false" aria-controls="menu__list">
-                
-            <svg class="menu__icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="32" height="32" >
-                <use class="menu__icon-contact" href="./images/sprite.svg#contact"></use>
-                <use class="menu__icon-cross" href="./images/sprite.svg#cross"></use>
-            </svg>
-            
-        </button>
-       
-        <nav class="header__menu">
-
-            <ul class="menu__list" id="menu__list">
-                
-                <li class="menu__items"><a href="" class="menu__link">Продать</a> </li>
-                <li class="menu__items"><a href="" class="menu__link">Оценка</a></li>
-                <li class="menu__items"><a href="" class="menu__link">Консультация</a></li>
-                <li class="menu__items"><a href="" class="menu__link">Как мы работаем</a></li>
-                <li class="menu__items"><a href="" class="menu__link">Готовые кейсы</a></li>
-                <li class="menu__items"><a href="" class="menu__link">Отзывы</a></li>
-                <li class="menu__items"><a href="" class="menu__link">Контакты</a></li>
-            
-            </ul>
-
-        </nav> 
-        
     </header>
     
     <main>
