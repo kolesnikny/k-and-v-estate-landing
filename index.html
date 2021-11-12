@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kvestate</title>
+    <title>k&vestate</title>
     <link rel="stylesheet" href="./styles/index.css">
    <!-- ./assets/styles/index.css    for nodejs-->
     <!-- ./styles/index.css  for vs code-->
@@ -18,7 +18,7 @@
             <div class="header__logo">
                 <img class="logo__img" src="./images/logo.png" alt="k and v estate">
                 <p class="logo__title">k&v estate</p>
-                <p class="logo__tegline">Агенство недвижимости</p>
+                <p class="logo__tegline">Агенство нерухомості</p>
             </div>
 
             <!-- menu.css -->
@@ -36,28 +36,67 @@
 
                 <ul class="menu__list" id="menu__list">
 
-                    <li class="menu__item"><a href="">Продажа</a> </li>
-                    <li class="menu__item"><a href="">Оценка</a></li>
-                    <li class="menu__item"><a href="">Консультация</a></li>
-                    <li class="menu__item"><a href="">Как мы работаем</a></li>
+                    <li class="menu__item"><a href="">Чим ми допоможемо</a> </li>
+                    <li class="menu__item"><a href="">Чому обирають нас?</a></li>
+                    <li class="menu__item"><a href="">Як все відбувається</a></li>
+                    
                 </ul>
 
                 <ul class="menu__list" id="menu__list">
-                    <li class="menu__item"><a href="">Наши кейсы</a></li>
-                    <li class="menu__item"><a href="">Отзывы</a></li>
-                    <li class="menu__item"><a href="">Контакты</a></li>
-                
+                    <li class="menu__item"><a href="">Наші кейси</a></li>
+                    <li class="menu__item"><a href="">Нам довіряють</a></li>
+                    <li class="menu__item"><a href="">Відгуки</a></li>
+                    <li class="menu__item"><a href="">Контакти</a></li>
                 </ul>
 
             </nav> 
         </div>
     </header>
     
-    <main>
-        <div class="content__slider">
-            <div class="slides">
-                <img class="slider__content--image" src="./images/slider/arenda kvartir.jpg" alt="">
+    <main class = "main"> 
+        <div class="main__services">
+            
+            <div class="slider_item">
+                <img class="slider__content--image" src="./images/sales-slider/appartaments.jpg" alt="">
+                <p>Придбати продати арендувати житло  
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt tempore perferendis eaque veniam quaerat laborum 
+                    animi dolor similique repudiandae? Quasi placeat fuga quos illo ipsa quod officia ad nesciunt unde!
+                </p>
             </div>
+            <div class="slides">
+                <img class="slider__content--image" src="./images/sales-slider/house.jpg" alt="">
+                <p>Придбати продати будинок 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt tempore perferendis eaque veniam quaerat laborum 
+                    animi dolor similique repudiandae? Quasi placeat fuga quos illo ipsa quod officia ad nesciunt unde!
+                </p>
+            </div>
+            <div class="slides">
+                <img class="slider__content--image" src="./images/sales-slider/commercial.jpg" alt="">
+                <p>Знайти приміщння для бізнесу 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt tempore perferendis eaque veniam quaerat laborum 
+                    animi dolor similique repudiandae? Quasi placeat fuga quos illo ipsa quod officia ad nesciunt unde!
+                </p>
+            </div>
+            <div class="slides">
+                <img class="slider__content--image" src="./images/sales-slider/office.jpg" alt="">
+                <p>Знайти приміщння для бізнесу 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Deserunt tempore perferendis eaque veniam quaerat laborum 
+                    animi dolor similique repudiandae? Quasi placeat fuga quos illo ipsa quod officia ad nesciunt unde!
+                </p>
+            </div>
+
+            <!-- Next and previous buttons  -->
+
+            <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+            <button class="next" onclick="plusSlides(1)">&#10095;</button>
+
+            <!-- callback button  -->
+
+            <button>звяжіться з нами</button>
         </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Deserunt tempore perferendis eaque veniam quaerat laborum 
@@ -86,48 +125,47 @@
         
     </main>
     
-    <!--
-    <ul class="menu__contacts" id="menu__contacts">
+    
+    
+
+    <footer style="display: none;">
+        <ul class="menu__contacts" id="menu__contacts">
                 
-        <li class="contacts__phone">
-            <a href="tel:+380507596025" class="menu__link menu__link--current contact__link">+380507596025</a>
-        </li>
-        <li class="contacts__social">
-            <ul class="contacts__social-list">
-                <li class="contacts__item">
-                    <a href="tg://resolve?domain=@ekolis" class="menu__link contact__link"><img class="contacts__img" src="./images/social/telegram_icon.png" alt="Telegram" class="contacts__img"></a>
-                </li>
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/facebook_icon.png" alt="Facebook" class="contacts__img"></a>
-                </li>
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/youtube_icon.png" alt="Youtube" class="contacts__img"></a>
-                </li>
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/messenger_icon.png" alt="Messenger" class="contacts__img"></a>
-                </li>
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/viber_icon.png" alt="Viber" class="contacts__img"></a>
-                </li>
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/email_icon.png" alt="Email" class="contacts__img"></a>
-                </li>
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/twitter_icon.png" alt="Twitter" class="contacts__img"></a>
-                </li> 
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link contacts__link--inactivate"><img class="contacts__img" src="./images/social/skype_icon.png" alt="Skype" class="contacts__img"></a>
-                </li>
-                <li class="contacts__item">
-                    <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/instagram_icon.png" alt="Instagram" class="contacts__img"></a>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    -->
-
-    <footer>
-
+            <li class="contacts__phone">
+                <a href="tel:+380507596025" class="menu__link menu__link--current contact__link">+380507596025</a>
+            </li>
+            <li class="contacts__social">
+                <ul class="contacts__social-list">
+                    <li class="contacts__item">
+                        <a href="tg://resolve?domain=@ekolis" class="menu__link contact__link"><img class="contacts__img" src="./images/social/telegram_icon.png" alt="Telegram" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/facebook_icon.png" alt="Facebook" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/youtube_icon.png" alt="Youtube" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/messenger_icon.png" alt="Messenger" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/viber_icon.png" alt="Viber" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/email_icon.png" alt="Email" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/twitter_icon.png" alt="Twitter" class="contacts__img"></a>
+                    </li> 
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link contacts__link--inactivate"><img class="contacts__img" src="./images/social/skype_icon.png" alt="Skype" class="contacts__img"></a>
+                    </li>
+                    <li class="contacts__item">
+                        <a href="" class="menu__link contact__link"><img class="contacts__img" src="./images/social/instagram_icon.png" alt="Instagram" class="contacts__img"></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </footer>
 
     <script>

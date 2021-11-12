@@ -1,0 +1,34 @@
+.main__services {
+  width: 100%;
+}
+
+@media (max-width: 369px) {
+}
+@media (min-width: 370px) and (max-width: 999px) {
+}
+@media (min-width: 1000px) {
+}
+
+.slider__content--image {
+  height: auto;
+}
+
+.slider__content--image {
+  display: none;
+}
+
+@media (min-width: 370px) and (max-width: 999px) {
+  .slider__content--image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .slider__content--image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
