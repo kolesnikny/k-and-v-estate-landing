@@ -1,21 +1,20 @@
 /* Variables */
 
 :root {
+  /*Colors*/
+  --basic-black: #000000;
+  /*--basic-neutral: #b1b3b6;*/
+  --basic-white: #ffffff;
+  --special-extra-dark: #1c33be;
+  --special-white-a: rgba(255, 255, 255, 0.9);
+  --special-gray-a: rgba(207, 207, 207, 0.5);
 
-    /*Colors*/
-    --basic-black: #000000;
-    /*--basic-neutral: #b1b3b6;*/
-    --basic-white: #ffffff;
-    --special-extra-dark: #1c33be;
-    --special-white-a: rgba(255, 255, 255, 0.9);
-    
-    /*Fonts*/
+  /*Fonts*/
 
-    --basic-font: 16px;
+  --basic-font: 16px;
 
-    /*Logo Sizes*/
-    --max-logo: 150px;
-   
+  /*Logo Sizes*/
+  --max-logo: 150px;
 }
 
 /*
