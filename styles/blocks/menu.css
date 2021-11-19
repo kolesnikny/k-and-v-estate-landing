@@ -132,6 +132,7 @@
 
   .menu__item a {
     color: var(--basic-white);
+    background-color: var(--special-gray-a);
     font-weight: 600;
   }
 }

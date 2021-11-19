@@ -1,37 +1,23 @@
+/*
 const slides = document.getElementsByClassName("slider__item");
 for (let number = 0; number < slides.length; number++) {
   slides[number].classList.toggle("slider__item--show");
 }
-
-/*
-slides[3].classList.toggle("slider__item--show");
 */
 
-/*
-const showSlides = () => {
-  for (let nunber = 0; number < slides.length; number++) {
-    slides[number].classList.toggle("slider__item--show");
-  }
-};
-*/
-/*
-let slideIndex = 0;
+var slideIndex = 0;
 showSlides();
 
-const showSlides = () => {
-  let number;
-  let slides = document.getElementsByClassName("slider__item");
-
-  
-  for (number = 0; number < slides.length; number++) {
-    slides[slideIndex - 1].classList.toggle("slider__item");
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("slider__item");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
   }
   slideIndex++;
   if (slideIndex > slides.length) {
     slideIndex = 1;
   }
-
-  slides[slideIndex - 1].classList.toggle("slider__item--show");
-  setTimeout(showSlides, 1000);
-};
-*/
+  slides[slideIndex - 1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
