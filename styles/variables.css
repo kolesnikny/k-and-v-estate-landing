@@ -1,27 +1,29 @@
 /* Variables */
 
+/*
+    small @media (max-width: 369px){}
+    base @media (min-width: 370px) and (max-width: 999px){}
+    large @media (min-width: 1000px){}
+*/
+
 :root {
   /*Colors*/
   --basic-black: #000000;
-  /*--basic-neutral: #b1b3b6;*/
   --basic-white: #ffffff;
-  /*--basic-grey: rgb(227, 224, 224);*/
   --basic-grey:  #c1e5e5;
   --special-extra-dark: #1c33be;
-  --special-white-a: rgba(255, 255, 255, 0.9);
+  --special-white-a: rgba(255, 255, 255, 0.95);
   --special-grey-a: rgba(207, 207, 207, 0.1);
   
 
-  /*Fonts*/
-
-  --basic-font: 16px;
-
-  /*Logo Sizes*/
+    /*Logo Sizes*/
   --max-logo: 150px;
+
+  /*Callback button size on slider*/
+  --callback-slider-small: 90vw;
+  --callback-slider-base: 70vw;
+  --callback-slider-large: 50vw;
+
 }
 
-/*
-    @media (max-width: 369px){}
-    @media (min-width: 370px) and (max-width: 999px){}
-    @media (min-width: 1000px){}
-*/
+
