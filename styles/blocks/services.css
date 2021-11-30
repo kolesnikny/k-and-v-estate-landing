@@ -33,21 +33,70 @@
 
 .slider__text {
   display: block;
-  position: absolute;
-  bottom: 60px;
-  left: 20px;
-  z-index: 1;
+  color: var(--basic-white);
+  text-shadow: 1px 1px 2px var(--basic-black);
+  font-weight: 600;
 }
 
-/* Fading animation */
-.fade {
+@media (max-width: 369px){
+  .slider__text {
+    font-size: 1.2em;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    position: absolute;
+    bottom: 6vh;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 999px){
+  .slider__text {
+    font-size: 2em;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    position: absolute;
+    bottom: 50px;
+    z-index: 1;
+  }
+}
+
+@media (min-width: 1000px){
+  .slider__text {
+    font-size: 3em;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    position: absolute;
+    bottom: 6vh;
+    z-index: 1;
+  }
+}
+
+/*Callback button*/
+
+.slider__callback {
+  
+}
+
+@media (min-width: 370px) and (max-width: 999px){
+  .slider__callback{
+    width: 100px;
+  height: 50px;
+  position: absolute;
+  bottom: 5vh;
+  z-index: 1;
+  }
+}
+
+
+/* Slider animation */
+.slider__item-anim {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
   animation-duration: 1.5s;
 }
 
-@-webkit-keyframes fade {
+@-webkit-keyframes slider__item-anim {
   from {
     opacity: 0.4;
   }
@@ -56,7 +105,7 @@
   }
 }
 
-@keyframes fade {
+@keyframes slider__item-anim {
   from {
     opacity: 0.4;
   }
@@ -65,9 +114,7 @@
   }
 }
 
-.slider__callback {
-  width: 100px;
-  height: 50px;
-  position: absolute;
-  bottom: 10px;
-}
+
+
+
+

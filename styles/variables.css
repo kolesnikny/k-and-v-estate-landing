@@ -5,9 +5,12 @@
   --basic-black: #000000;
   /*--basic-neutral: #b1b3b6;*/
   --basic-white: #ffffff;
+  /*--basic-grey: rgb(227, 224, 224);*/
+  --basic-grey:  #c1e5e5;
   --special-extra-dark: #1c33be;
   --special-white-a: rgba(255, 255, 255, 0.9);
-  --special-gray-a: rgba(207, 207, 207, 0.1);
+  --special-grey-a: rgba(207, 207, 207, 0.1);
+  
 
   /*Fonts*/
 
